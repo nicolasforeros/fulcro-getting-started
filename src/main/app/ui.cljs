@@ -1,30 +1,46 @@
 (ns app.ui
   (:require
     [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
-    [com.fulcrologic.fulcro.dom :as dom]))
+    [com.fulcrologic.fulcro.dom :as dom]
+    [app.mutations :as api]))
 
-(defsc Person [this {:person/keys [name age]}]
+(defsc Person [this {:person/keys [id name age] :as props} {:keys [onDelete]}]
+  {:query [:person/id :person/name :person/age]
+   :ident (fn [] [:person/id (:person/id props)])
+   :initial-state (fn [{:keys [id name age] :as params}]
+                    {:person/id id :person/name name :person/age age}) }
   (dom/li
-    (dom/h5 (str name " (age: " age ")"))))
+    (dom/h5 (str name " (age: " age ")") (dom/button {:onClick #(onDelete id)} "X"))))
 
 ;; The keyfn generates a React key for each element based on props. See React documentation on keys.
-(def ui-person (comp/factory Person {:keyfn :person/name}))
+(def ui-person (comp/computed-factory Person {:keyfn :person/name}))
 
-(defsc PersonList [this {:list/keys [label people]}]
-  (dom/div
-    (dom/h4 label)
-    (dom/ul
-      (map ui-person people))))
+(defsc PersonList [this {:list/keys [id label people] :as props}]
+  {:query [:list/id :list/label {:list/people (comp/get-query Person)}]
+   :ident (fn [] [:list/id (:list/id props)])
+   :initial-state (fn [{:keys [id label]}]
+                    {:list/id id
+                     :list/label  label
+                     :list/people (if (= id :friends)
+                                    [(comp/get-initial-state Person {:id 1 :name "Sally" :age 32})
+                                     (comp/get-initial-state Person {:id 2 :name "Joe" :age 22})]
+                                    [(comp/get-initial-state Person {:id 3 :name "Fred" :age 11})
+                                     (comp/get-initial-state Person {:id 4 :name "Bobby" :age 55})])})}
+  (let [delete-person (fn [person-id]
+                        (comp/transact! this [(api/delete-person {:list/id id :person/id person-id})]))]
+    (dom/div
+      (dom/h4 label)
+      (dom/ul
+        (map #(ui-person % {:onDelete delete-person}) people)))))
 
 (def ui-person-list (comp/factory PersonList))
 
-(defsc Root [this {:keys [ui/react-key]}]
-  (let [ui-data {:friends {:list/label "Friends" :list/people
-                           [{:person/name "Sally" :person/age 32}
-                            {:person/name "Joe" :person/age 22}]}
-                 :enemies {:list/label "Enemies" :list/people
-                           [{:person/name "Fred" :person/age 11}
-                            {:person/name "Bobby" :person/age 55}]}}]
-    (dom/div
-      (ui-person-list (:friends ui-data))
-      (ui-person-list (:enemies ui-data)))))
+; Root's initial state becomes the entire app's initial state!
+(defsc Root [this {:keys [friends enemies]}]
+  {:query [{:friends (comp/get-query PersonList)}
+           {:enemies (comp/get-query PersonList)}]
+   :initial-state (fn [params] {:friends (comp/get-initial-state PersonList {:id :friends :label "Friends"})
+                                :enemies (comp/get-initial-state PersonList {:id :enemies :label "Enemies"})}) }
+  (dom/div
+    (ui-person-list friends)
+    (ui-person-list enemies)))
