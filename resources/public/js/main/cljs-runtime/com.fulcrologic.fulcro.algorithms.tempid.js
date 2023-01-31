@@ -65,8 +65,8 @@ return (new com.fulcrologic.fulcro.algorithms.tempid.TempId(id,__hash));
  * Create a new tempid.
  */
 com.fulcrologic.fulcro.algorithms.tempid.tempid = (function com$fulcrologic$fulcro$algorithms$tempid$tempid(var_args){
-var G__43214 = arguments.length;
-switch (G__43214) {
+var G__48319 = arguments.length;
+switch (G__48319) {
 case 0:
 return com.fulcrologic.fulcro.algorithms.tempid.tempid.cljs$core$IFn$_invoke$arity$0();
 
@@ -134,11 +134,11 @@ return clojure.walk.prewalk_replace(tid__GT_rid,data_structure);
  *   guids).  It is unsafe to use this function if you're using something else for temporary IDs
  *   as this function might rewrite things that are not IDs.
  */
-com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids_BANG_ = (function com$fulcrologic$fulcro$algorithms$tempid$resolve_tempids_BANG_(p__43234,tx_result){
-var map__43235 = p__43234;
-var map__43235__$1 = cljs.core.__destructure_map(map__43235);
-var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__43235__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","state-atom","com.fulcrologic.fulcro.application/state-atom",648128366));
-var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__43235__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
+com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids_BANG_ = (function com$fulcrologic$fulcro$algorithms$tempid$resolve_tempids_BANG_(p__48343,tx_result){
+var map__48344 = p__48343;
+var map__48344__$1 = cljs.core.__destructure_map(map__48344);
+var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48344__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","state-atom","com.fulcrologic.fulcro.application/state-atom",648128366));
+var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48344__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
 var tid__GT_rid = com.fulcrologic.fulcro.algorithms.tempid.result__GT_tempid__GT_realid(tx_result);
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(state_atom,com.fulcrologic.fulcro.algorithms.tempid.resolve_tempids,tid__GT_rid);
 
@@ -151,22 +151,22 @@ return cljs.core.update.cljs$core$IFn$_invoke$arity$4(cljs.core.update.cljs$core
  *   it generates a stable one based on that number (useful for testing). Works in cljc.
  */
 com.fulcrologic.fulcro.algorithms.tempid.uuid = (function com$fulcrologic$fulcro$algorithms$tempid$uuid(var_args){
-var G__43238 = arguments.length;
-switch (G__43238) {
+var G__48355 = arguments.length;
+switch (G__48355) {
 case 0:
 return com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$core$IFn$_invoke$arity$0();
 
 break;
 default:
 var args_arr__5794__auto__ = [];
-var len__5769__auto___43249 = arguments.length;
-var i__5770__auto___43250 = (0);
+var len__5769__auto___48373 = arguments.length;
+var i__5770__auto___48374 = (0);
 while(true){
-if((i__5770__auto___43250 < len__5769__auto___43249)){
-args_arr__5794__auto__.push((arguments[i__5770__auto___43250]));
+if((i__5770__auto___48374 < len__5769__auto___48373)){
+args_arr__5794__auto__.push((arguments[i__5770__auto___48374]));
 
-var G__43251 = (i__5770__auto___43250 + (1));
-i__5770__auto___43250 = G__43251;
+var G__48379 = (i__5770__auto___48374 + (1));
+i__5770__auto___48374 = G__48379;
 continue;
 } else {
 }
@@ -188,9 +188,9 @@ return cljs.core.uuid(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.st
 }));
 
 /** @this {Function} */
-(com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$applyTo = (function (seq43237){
+(com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$applyTo = (function (seq48347){
 var self__5755__auto__ = this;
-return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq43237));
+return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq48347));
 }));
 
 (com.fulcrologic.fulcro.algorithms.tempid.uuid.cljs$lang$maxFixedArity = (0));

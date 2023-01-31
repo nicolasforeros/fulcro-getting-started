@@ -26,11 +26,11 @@ goog.provide('com.fulcrologic.fulcro.algorithms.lookup');
  *   Returns nil if the algorithm is currently undefined.
  *   
  */
-com.fulcrologic.fulcro.algorithms.lookup.app_algorithm = (function com$fulcrologic$fulcro$algorithms$lookup$app_algorithm(p__43160,k){
-var map__43161 = p__43160;
-var map__43161__$1 = cljs.core.__destructure_map(map__43161);
-var app__$1 = map__43161__$1;
-var algorithms = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__43161__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","algorithms","com.fulcrologic.fulcro.application/algorithms",-397334538));
+com.fulcrologic.fulcro.algorithms.lookup.app_algorithm = (function com$fulcrologic$fulcro$algorithms$lookup$app_algorithm(p__48306,k){
+var map__48307 = p__48306;
+var map__48307__$1 = cljs.core.__destructure_map(map__48307);
+var app__$1 = map__48307__$1;
+var algorithms = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48307__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","algorithms","com.fulcrologic.fulcro.application/algorithms",-397334538));
 var temp__5804__auto__ = ((((typeof k === 'string') || ((((k instanceof cljs.core.Keyword)) || ((k instanceof cljs.core.Symbol))))))?cljs.core.keyword.cljs$core$IFn$_invoke$arity$2("com.fulcrologic.fulcro.algorithm",cljs.core.name(k)):null);
 if(cljs.core.truth_(temp__5804__auto__)){
 var nm = temp__5804__auto__;

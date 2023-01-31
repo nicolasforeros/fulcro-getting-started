@@ -18,9 +18,9 @@ return cljs.core.native_satisfies_QMARK_(cljs.core.IAtom,a);
 }
 });
 com.fulcrologic.fulcro.algorithms.do_not_use.join_entry = (function com$fulcrologic$fulcro$algorithms$do_not_use$join_entry(expr){
-var vec__43189 = ((cljs.core.seq_QMARK_(expr))?cljs.core.ffirst(expr):cljs.core.first(expr));
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__43189,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__43189,(1),null);
+var vec__48311 = ((cljs.core.seq_QMARK_(expr))?cljs.core.ffirst(expr):cljs.core.first(expr));
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48311,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48311,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [((cljs.core.list_QMARK_(k))?cljs.core.first(k):k),v], null);
 });
 com.fulcrologic.fulcro.algorithms.do_not_use.join_QMARK_ = (function com$fulcrologic$fulcro$algorithms$do_not_use$join_QMARK_(x){
@@ -31,11 +31,11 @@ com.fulcrologic.fulcro.algorithms.do_not_use.recursion_QMARK_ = (function com$fu
 return ((cljs.core.symbol_identical_QMARK_(new cljs.core.Symbol(null,"...","...",-1926939749,null),x)) || (typeof x === 'number'));
 });
 com.fulcrologic.fulcro.algorithms.do_not_use.union_QMARK_ = (function com$fulcrologic$fulcro$algorithms$do_not_use$union_QMARK_(expr){
-var expr__$1 = (function (){var G__43204 = expr;
+var expr__$1 = (function (){var G__48325 = expr;
 if(cljs.core.seq_QMARK_(expr)){
-return cljs.core.first(G__43204);
+return cljs.core.first(G__48325);
 } else {
-return G__43204;
+return G__48325;
 }
 })();
 return ((cljs.core.map_QMARK_(expr__$1)) && (cljs.core.map_QMARK_(cljs.core.second(cljs.core.first(expr__$1)))));
@@ -50,8 +50,8 @@ return cljs.core.ffirst(expr);
 }
 } else {
 if(cljs.core.seq_QMARK_(expr)){
-var G__43215 = cljs.core.first(expr);
-return (com.fulcrologic.fulcro.algorithms.do_not_use.join_key.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.algorithms.do_not_use.join_key.cljs$core$IFn$_invoke$arity$1(G__43215) : com.fulcrologic.fulcro.algorithms.do_not_use.join_key.call(null,G__43215));
+var G__48328 = cljs.core.first(expr);
+return (com.fulcrologic.fulcro.algorithms.do_not_use.join_key.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.algorithms.do_not_use.join_key.cljs$core$IFn$_invoke$arity$1(G__48328) : com.fulcrologic.fulcro.algorithms.do_not_use.join_key.call(null,G__48328));
 } else {
 return expr;
 
@@ -75,14 +75,14 @@ return (new Date());
  */
 com.fulcrologic.fulcro.algorithms.do_not_use.deep_merge = (function com$fulcrologic$fulcro$algorithms$do_not_use$deep_merge(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___43255 = arguments.length;
-var i__5770__auto___43256 = (0);
+var len__5769__auto___48392 = arguments.length;
+var i__5770__auto___48393 = (0);
 while(true){
-if((i__5770__auto___43256 < len__5769__auto___43255)){
-args__5775__auto__.push((arguments[i__5770__auto___43256]));
+if((i__5770__auto___48393 < len__5769__auto___48392)){
+args__5775__auto__.push((arguments[i__5770__auto___48393]));
 
-var G__43257 = (i__5770__auto___43256 + (1));
-i__5770__auto___43256 = G__43257;
+var G__48394 = (i__5770__auto___48393 + (1));
+i__5770__auto___48393 = G__48394;
 continue;
 } else {
 }
@@ -104,9 +104,9 @@ return cljs.core.last(xs);
 (com.fulcrologic.fulcro.algorithms.do_not_use.deep_merge.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(com.fulcrologic.fulcro.algorithms.do_not_use.deep_merge.cljs$lang$applyTo = (function (seq43226){
+(com.fulcrologic.fulcro.algorithms.do_not_use.deep_merge.cljs$lang$applyTo = (function (seq48341){
 var self__5755__auto__ = this;
-return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq43226));
+return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq48341));
 }));
 
 com.fulcrologic.fulcro.algorithms.do_not_use.conform_BANG_ = (function com$fulcrologic$fulcro$algorithms$do_not_use$conform_BANG_(spec,x){
@@ -229,17 +229,17 @@ return and__5043__auto____$1;
 return and__5043__auto__;
 }
 })())){
-taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$11(taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"error","error",-978969032),"com.fulcrologic.fulcro.algorithms.do-not-use",null,163,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [["The composed root query is not valid EQL. The app may crash. See `(comp/get-query ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__43246 = query;
-var G__43246__$1 = (((G__43246 == null))?null:cljs.core.meta(G__43246));
-var G__43246__$2 = (((G__43246__$1 == null))?null:new cljs.core.Keyword(null,"component","component",1555936782).cljs$core$IFn$_invoke$arity$1(G__43246__$1));
-if((G__43246__$2 == null)){
+taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$10(taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"error","error",-978969032),"com.fulcrologic.fulcro.algorithms.do-not-use",null,163,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [["The composed root query is not valid EQL. The app may crash. See `(comp/get-query ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__48380 = query;
+var G__48380__$1 = (((G__48380 == null))?null:cljs.core.meta(G__48380));
+var G__48380__$2 = (((G__48380__$1 == null))?null:new cljs.core.Keyword(null,"component","component",1555936782).cljs$core$IFn$_invoke$arity$1(G__48380__$1));
+if((G__48380__$2 == null)){
 return null;
 } else {
-return (component_name_fn.cljs$core$IFn$_invoke$arity$1 ? component_name_fn.cljs$core$IFn$_invoke$arity$1(G__43246__$2) : component_name_fn.call(null,G__43246__$2));
+return (component_name_fn.cljs$core$IFn$_invoke$arity$1 ? component_name_fn.cljs$core$IFn$_invoke$arity$1(G__48380__$2) : component_name_fn.call(null,G__48380__$2));
 }
 })()),")`"].join(''),query], null);
-}),null)),null,23263480,null);
+}),null)),null,-401910255);
 } else {
 }
 

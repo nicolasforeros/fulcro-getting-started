@@ -14,23 +14,23 @@ var module$node_modules$react$index=shadow.js.require("module$node_modules$react
  *   things).
  *   
  */
-com.fulcrologic.fulcro.dom.inputs.StringBufferedInput = (function com$fulcrologic$fulcro$dom$inputs$StringBufferedInput(kw,p__48733){
-var map__48734 = p__48733;
-var map__48734__$1 = cljs.core.__destructure_map(map__48734);
-var model__GT_string = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48734__$1,new cljs.core.Keyword(null,"model->string","model->string",-2085451701));
-var string__GT_model = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48734__$1,new cljs.core.Keyword(null,"string->model","string->model",-134531957));
-var string_filter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48734__$1,new cljs.core.Keyword(null,"string-filter","string-filter",781255569));
+com.fulcrologic.fulcro.dom.inputs.StringBufferedInput = (function com$fulcrologic$fulcro$dom$inputs$StringBufferedInput(kw,p__51669){
+var map__51671 = p__51669;
+var map__51671__$1 = cljs.core.__destructure_map(map__51671);
+var model__GT_string = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51671__$1,new cljs.core.Keyword(null,"model->string","model->string",-2085451701));
+var string__GT_model = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51671__$1,new cljs.core.Keyword(null,"string->model","string->model",-134531957));
+var string_filter = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51671__$1,new cljs.core.Keyword(null,"string-filter","string-filter",781255569));
 var cls = (function (props){
 var this$ = this;
-var props_48781__$1 = com.fulcrologic.fulcro.dom.inputs.goog$module$goog$object.get(props,"fulcro$value");
-var map__48735_48782 = props_48781__$1;
-var map__48735_48783__$1 = cljs.core.__destructure_map(map__48735_48782);
-var value_48784 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48735_48783__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var initial_state_48785 = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672),value_48784,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (evt){
-var map__48738 = (com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1(this$) : com.fulcrologic.fulcro.components.props.call(null,this$));
-var map__48738__$1 = cljs.core.__destructure_map(map__48738);
-var value__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48738__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var onChange = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48738__$1,new cljs.core.Keyword(null,"onChange","onChange",-312891301));
+var props_51721__$1 = com.fulcrologic.fulcro.dom.inputs.goog$module$goog$object.get(props,"fulcro$value");
+var map__51674_51722 = props_51721__$1;
+var map__51674_51723__$1 = cljs.core.__destructure_map(map__51674_51722);
+var value_51724 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51674_51723__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var initial_state_51725 = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672),value_51724,new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (evt){
+var map__51678 = (com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1(this$) : com.fulcrologic.fulcro.components.props.call(null,this$));
+var map__51678__$1 = cljs.core.__destructure_map(map__51678);
+var value__$1 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51678__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var onChange = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51678__$1,new cljs.core.Keyword(null,"onChange","onChange",-312891301));
 var nsv = com.fulcrologic.fulcro.dom.events.target_value(evt);
 var nv = (string__GT_model.cljs$core$IFn$_invoke$arity$1 ? string__GT_model.cljs$core$IFn$_invoke$arity$1(nsv) : string__GT_model.call(null,nsv));
 com.fulcrologic.fulcro.components.set_state_BANG_.cljs$core$IFn$_invoke$arity$2(this$,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"stringValue","stringValue",1623733802),nsv,new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672),value__$1,new cljs.core.Keyword(null,"value","value",305978217),nv], null));
@@ -46,51 +46,51 @@ return (onChange.cljs$core$IFn$_invoke$arity$1 ? onChange.cljs$core$IFn$_invoke$
 } else {
 return null;
 }
-}),new cljs.core.Keyword(null,"stringValue","stringValue",1623733802),(model__GT_string.cljs$core$IFn$_invoke$arity$1 ? model__GT_string.cljs$core$IFn$_invoke$arity$1(value_48784) : model__GT_string.call(null,value_48784))], null);
-(this$.state = (function (){var obj48741 = ({"fulcro$state":initial_state_48785});
-return obj48741;
+}),new cljs.core.Keyword(null,"stringValue","stringValue",1623733802),(model__GT_string.cljs$core$IFn$_invoke$arity$1 ? model__GT_string.cljs$core$IFn$_invoke$arity$1(value_51724) : model__GT_string.call(null,value_51724))], null);
+(this$.state = (function (){var obj51680 = ({"fulcro$state":initial_state_51725});
+return obj51680;
 })());
 
 return null;
 });
 com.fulcrologic.fulcro.components.configure_component_BANG_(cls,kw,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"getDerivedStateFromProps","getDerivedStateFromProps",-991834739),(function (latest_props,state){
-var map__48743 = latest_props;
-var map__48743__$1 = cljs.core.__destructure_map(map__48743);
-var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48743__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var map__48744 = state;
-var map__48744__$1 = cljs.core.__destructure_map(map__48744);
-var oldPropValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48744__$1,new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672));
-var stringValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48744__$1,new cljs.core.Keyword(null,"stringValue","stringValue",1623733802));
+var map__51684 = latest_props;
+var map__51684__$1 = cljs.core.__destructure_map(map__51684);
+var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51684__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var map__51685 = state;
+var map__51685__$1 = cljs.core.__destructure_map(map__51685);
+var oldPropValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51685__$1,new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672));
+var stringValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51685__$1,new cljs.core.Keyword(null,"stringValue","stringValue",1623733802));
 var ignorePropValue_QMARK_ = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(oldPropValue,value)) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(value,new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(state))));
-var stringValue__$1 = (function (){var G__48747 = ((ignorePropValue_QMARK_)?stringValue:(model__GT_string.cljs$core$IFn$_invoke$arity$1 ? model__GT_string.cljs$core$IFn$_invoke$arity$1(value) : model__GT_string.call(null,value)));
+var stringValue__$1 = (function (){var G__51686 = ((ignorePropValue_QMARK_)?stringValue:(model__GT_string.cljs$core$IFn$_invoke$arity$1 ? model__GT_string.cljs$core$IFn$_invoke$arity$1(value) : model__GT_string.call(null,value)));
 if(cljs.core.truth_(string_filter)){
-return (string_filter.cljs$core$IFn$_invoke$arity$1 ? string_filter.cljs$core$IFn$_invoke$arity$1(G__48747) : string_filter.call(null,G__48747));
+return (string_filter.cljs$core$IFn$_invoke$arity$1 ? string_filter.cljs$core$IFn$_invoke$arity$1(G__51686) : string_filter.call(null,G__51686));
 } else {
-return G__48747;
+return G__51686;
 }
 })();
 var new_derived_state = cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([state,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"stringValue","stringValue",1623733802),stringValue__$1,new cljs.core.Keyword(null,"oldPropValue","oldPropValue",1507086672),value], null)], 0));
 return ({"fulcro$state": new_derived_state});
 }),new cljs.core.Keyword(null,"render","render",-1408033454),(function (this$){
-var map__48748 = (com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1(this$) : com.fulcrologic.fulcro.components.props.call(null,this$));
-var map__48748__$1 = cljs.core.__destructure_map(map__48748);
-var props = map__48748__$1;
-var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48748__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var onBlur = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48748__$1,new cljs.core.Keyword(null,"onBlur","onBlur",229342509));
-var map__48749 = com.fulcrologic.fulcro.components.get_state.cljs$core$IFn$_invoke$arity$1(this$);
-var map__48749__$1 = cljs.core.__destructure_map(map__48749);
-var stringValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48749__$1,new cljs.core.Keyword(null,"stringValue","stringValue",1623733802));
-var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__48749__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
-return module$node_modules$react$index.createElement("input",cljs.core.clj__GT_js(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([props,(function (){var G__48751 = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),stringValue,new cljs.core.Keyword(null,"onChange","onChange",-312891301),on_change], null);
+var map__51691 = (com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1 ? com.fulcrologic.fulcro.components.props.cljs$core$IFn$_invoke$arity$1(this$) : com.fulcrologic.fulcro.components.props.call(null,this$));
+var map__51691__$1 = cljs.core.__destructure_map(map__51691);
+var props = map__51691__$1;
+var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51691__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var onBlur = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51691__$1,new cljs.core.Keyword(null,"onBlur","onBlur",229342509));
+var map__51692 = com.fulcrologic.fulcro.components.get_state.cljs$core$IFn$_invoke$arity$1(this$);
+var map__51692__$1 = cljs.core.__destructure_map(map__51692);
+var stringValue = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51692__$1,new cljs.core.Keyword(null,"stringValue","stringValue",1623733802));
+var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__51692__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+return module$node_modules$react$index.createElement("input",cljs.core.clj__GT_js(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([props,(function (){var G__51694 = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"value","value",305978217),stringValue,new cljs.core.Keyword(null,"onChange","onChange",-312891301),on_change], null);
 if(cljs.core.truth_(onBlur)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__48751,new cljs.core.Keyword(null,"onBlur","onBlur",229342509),(function (evt){
-var G__48752 = (function (){var G__48754 = com.fulcrologic.fulcro.dom.events.target_value(evt);
-return (string__GT_model.cljs$core$IFn$_invoke$arity$1 ? string__GT_model.cljs$core$IFn$_invoke$arity$1(G__48754) : string__GT_model.call(null,G__48754));
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__51694,new cljs.core.Keyword(null,"onBlur","onBlur",229342509),(function (evt){
+var G__51695 = (function (){var G__51696 = com.fulcrologic.fulcro.dom.events.target_value(evt);
+return (string__GT_model.cljs$core$IFn$_invoke$arity$1 ? string__GT_model.cljs$core$IFn$_invoke$arity$1(G__51696) : string__GT_model.call(null,G__51696));
 })();
-return (onBlur.cljs$core$IFn$_invoke$arity$1 ? onBlur.cljs$core$IFn$_invoke$arity$1(G__48752) : onBlur.call(null,G__48752));
+return (onBlur.cljs$core$IFn$_invoke$arity$1 ? onBlur.cljs$core$IFn$_invoke$arity$1(G__51695) : onBlur.call(null,G__51695));
 }));
 } else {
-return G__48751;
+return G__51694;
 }
 })()], 0))));
 })], null));
@@ -110,21 +110,21 @@ return clojure.string.replace(s,/[\s\t:]/,"");
  * will send a keyword to `onChange` and `onBlur`. Any other attributes in props are passed directly to the
  * underlying `dom/input`.
  */
-com.fulcrologic.fulcro.dom.inputs.ui_keyword_input = com.fulcrologic.fulcro.components.factory.cljs$core$IFn$_invoke$arity$1(com.fulcrologic.fulcro.dom.inputs.StringBufferedInput(new cljs.core.Keyword("com.fulcrologic.fulcro.dom.inputs","KeywordInput","com.fulcrologic.fulcro.dom.inputs/KeywordInput",1544417213),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"model->string","model->string",-2085451701),(function (p1__48760_SHARP_){
-return cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__48763 = p1__48760_SHARP_;
-if((G__48763 == null)){
+com.fulcrologic.fulcro.dom.inputs.ui_keyword_input = com.fulcrologic.fulcro.components.factory.cljs$core$IFn$_invoke$arity$1(com.fulcrologic.fulcro.dom.inputs.StringBufferedInput(new cljs.core.Keyword("com.fulcrologic.fulcro.dom.inputs","KeywordInput","com.fulcrologic.fulcro.dom.inputs/KeywordInput",1544417213),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"model->string","model->string",-2085451701),(function (p1__51700_SHARP_){
+return cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__51705 = p1__51700_SHARP_;
+if((G__51705 == null)){
 return null;
 } else {
-return cljs.core.name(G__48763);
+return cljs.core.name(G__51705);
 }
 })());
-}),new cljs.core.Keyword(null,"string-filter","string-filter",781255569),com.fulcrologic.fulcro.dom.inputs.symbol_chars,new cljs.core.Keyword(null,"string->model","string->model",-134531957),(function (p1__48761_SHARP_){
-if(cljs.core.seq(p1__48761_SHARP_)){
-var G__48764 = p1__48761_SHARP_;
-if((G__48764 == null)){
+}),new cljs.core.Keyword(null,"string-filter","string-filter",781255569),com.fulcrologic.fulcro.dom.inputs.symbol_chars,new cljs.core.Keyword(null,"string->model","string->model",-134531957),(function (p1__51701_SHARP_){
+if(cljs.core.seq(p1__51701_SHARP_)){
+var G__51708 = p1__51701_SHARP_;
+if((G__51708 == null)){
 return null;
 } else {
-return cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(G__48764);
+return cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(G__51708);
 }
 } else {
 return null;
@@ -141,12 +141,12 @@ return null;
 return n;
 }
 });
-var digits_48794 = cljs.core.into.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentHashSet.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$1(cljs.core.str),cljs.core.range.cljs$core$IFn$_invoke$arity$1((10)));
+var digits_51747 = cljs.core.into.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentHashSet.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$1(cljs.core.str),cljs.core.range.cljs$core$IFn$_invoke$arity$1((10)));
 /**
  * Returns `s` with all non-digits stripped.
  */
 com.fulcrologic.fulcro.dom.inputs.just_digits = (function com$fulcrologic$fulcro$dom$inputs$just_digits(s){
-return clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.filter.cljs$core$IFn$_invoke$arity$2(digits_48794,cljs.core.seq(s)));
+return clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.filter.cljs$core$IFn$_invoke$arity$2(digits_51747,cljs.core.seq(s)));
 });
 /**
  * An integer input. Can be used like `dom/input` but onChange and onBlur handlers will be passed an int instead of

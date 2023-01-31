@@ -14,8 +14,8 @@ return setTimeout(f,tm);
  *   - `tm` - Number of ms to delay (default 0).
  */
 com.fulcrologic.fulcro.algorithms.scheduling.schedule_BANG_ = (function com$fulcrologic$fulcro$algorithms$scheduling$schedule_BANG_(var_args){
-var G__47373 = arguments.length;
-switch (G__47373) {
+var G__50193 = arguments.length;
+switch (G__50193) {
 case 4:
 return com.fulcrologic.fulcro.algorithms.scheduling.schedule_BANG_.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 
@@ -33,9 +33,9 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 (com.fulcrologic.fulcro.algorithms.scheduling.schedule_BANG_.cljs$core$IFn$_invoke$arity$4 = (function (app__$1,scheduled_key,action,tm){
 new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("com.fulcrologic.fulcro.application","app","com.fulcrologic.fulcro.application/app",-1014694064),cljs.core.keyword_QMARK_,cljs.core.fn_QMARK_,cljs.core.int_QMARK_,com.fulcrologic.guardrails.core._EQ__GT_,cljs.core.any_QMARK_], null);
 
-var map__47375 = app__$1;
-var map__47375__$1 = cljs.core.__destructure_map(map__47375);
-var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__47375__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
+var map__50195 = app__$1;
+var map__50195__$1 = cljs.core.__destructure_map(map__50195);
+var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50195__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
 if(cljs.core.truth_(cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(runtime_atom),scheduled_key))){
 return null;
 } else {
@@ -57,8 +57,8 @@ return com.fulcrologic.fulcro.algorithms.scheduling.schedule_BANG_.cljs$core$IFn
 
 (com.fulcrologic.fulcro.algorithms.scheduling.schedule_BANG_.cljs$lang$maxFixedArity = 4);
 
-var raf_47410 = (((typeof requestAnimationFrame !== 'undefined'))?requestAnimationFrame:(function (p1__47381_SHARP_){
-return com.fulcrologic.fulcro.algorithms.scheduling.defer(p1__47381_SHARP_,(16));
+var raf_50204 = (((typeof requestAnimationFrame !== 'undefined'))?requestAnimationFrame:(function (p1__50197_SHARP_){
+return com.fulcrologic.fulcro.algorithms.scheduling.defer(p1__50197_SHARP_,(16));
 }));
 /**
  * Schedule the processing of a specific action in the runtime atom on the next animation frame.
@@ -69,9 +69,9 @@ return com.fulcrologic.fulcro.algorithms.scheduling.defer(p1__47381_SHARP_,(16))
 com.fulcrologic.fulcro.algorithms.scheduling.schedule_animation_BANG_ = (function com$fulcrologic$fulcro$algorithms$scheduling$schedule_animation_BANG_(app__$1,scheduled_key,action){
 new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("com.fulcrologic.fulcro.application","app","com.fulcrologic.fulcro.application/app",-1014694064),cljs.core.keyword_QMARK_,cljs.core.fn_QMARK_,com.fulcrologic.guardrails.core._EQ__GT_,cljs.core.any_QMARK_], null);
 
-var map__47383 = app__$1;
-var map__47383__$1 = cljs.core.__destructure_map(map__47383);
-var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__47383__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
+var map__50199 = app__$1;
+var map__50199__$1 = cljs.core.__destructure_map(map__50199);
+var runtime_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__50199__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","runtime-atom","com.fulcrologic.fulcro.application/runtime-atom",-1167397772));
 if(cljs.core.truth_(cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(runtime_atom),scheduled_key))){
 return null;
 } else {
@@ -82,7 +82,7 @@ cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(runtime_atom,cljs.core.assoc,
 
 return (action.cljs$core$IFn$_invoke$arity$0 ? action.cljs$core$IFn$_invoke$arity$0() : action.call(null));
 });
-return (raf_47410.cljs$core$IFn$_invoke$arity$1 ? raf_47410.cljs$core$IFn$_invoke$arity$1(f) : raf_47410.call(null,f));
+return (raf_50204.cljs$core$IFn$_invoke$arity$1 ? raf_50204.cljs$core$IFn$_invoke$arity$1(f) : raf_50204.call(null,f));
 }
 });
 
